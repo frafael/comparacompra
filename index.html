@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Compara Compra</title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/comparacompra.css" rel="stylesheet" media="screen">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="">
+		function executeMovie() {
+			$(".play").hide();
+			$(".background-video").hide();
+			$(".box-video").append('<iframe src="http://player.vimeo.com/video/56069075?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;api=1" width="525" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+		}		
+	</script>
+  </head>
+  <body id="index">
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+		<div class="container">
+		  <a class="logo"><img src="img/logo.png" /></a>
+
+		  <div class="nav-collapse collapse nav-form">
+			<form action="" method="post" >
+			  <div class="formBox-message"><strong>Já possui cadastro?</strong></div>
+			  <div class="formBox">
+				<input type="email" placeholder="E-mail"><br>
+				<input id="remember" name="remember" type="checkbox" checked=""><label for="remember">Mantenha-me conectado</label>
+			  </div>
+
+			  <div class="formBox">
+				  <input id="" name="" type="password" placeholder="Senha" value="" class="greyText">
+				  <br>
+				  <a href="/user/forgot_password" class="greyText" rel="nofollow">Esqueceu sua senha?</a>
+			  </div>
+
+			  <div class="formBox">
+				<input class="btn btn-warning" id="btn-submit" type="submit" value="Entrar">
+			  </div>
+
+			</form>
+		  </div>
+	 
+		</div>
+	  </div>
+	</div>
+	<div class="size-default">
+		<div class="box-video box">
+			<span onclick="executeMovie();" class="play"></span>
+			<img src="img/video-bkg.png" class="background-video" width="525" height="300" style="margin-bottom:6px;"/>
+			<!-- iframe src="http://player.vimeo.com/video/56069075?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;api=1" width="525" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe-->
+		</div>
+		<div id="form-cadastro">
+			<h4>Supermercado Inteligente!</h4>
+			<div class="new-user"><strong>Novo aqui?</strong> Cadastre-se!</div>
+			<form action="" method="POST" autocomplete="off" class="clearfix" id="auth-form">
+				<div>
+					<input id="email" type="text" placeholder="Email" name="email" value="" maxlength="30" class="required">
+				</div>
+				<div>
+					<input id="password" type="password" placeholder="Senha" name="senha" maxlength="32" class="required">
+				</div>
+				<div>
+					<input id="cep" type="text" placeholder="Cep" name="cep" value="" maxlength="30" class="required">
+				</div>
+				<div class="actions clearfix">
+					<input type="submit" value="Cadastre-se" id="btn-signup">
+				</div>
+			</form>
+			<img src="img/homelife.png"/>
+		</div>
+	</div>
+	
+	<div class="container-info">
+		<div class="info">
+			<h5>Fácil e rápido</h5>
+			Faça suas compras em 5 minutos, sem trânsito, sem filas. Crie e salve suas listas.
+		</div>
+		<div class="separator">
+		</div>
+		<div class="info">
+			<h5>Conforto e economia</h5>
+			Compare preços e ecomize. Pague com segurança e receba suas compras em casa. 
+		</div>
+	</div>	
+	
+	<div class="footer">
+		<div class="footer-container">
+			<div id="links">
+				<a href="http://comparacompra.com.br/">Início</a>
+				<a href="http://comparacompra.com.br/">Quem somos</a>
+				<a href="http://comparacompra.com.br/">Fale Conosco</a>
+				<span>Copyright © 2012 ComparaCompra </span>
+			</div>
+			<div id="networks">
+				<a href="http://www.facebook.com/ComparaCompra" target="_blank" id="facebook"></a>
+				<a href="https://twitter.com/ComparaCompra" target="_blank" id="twitter"></a>
+			</div>
+		</div>
+	</div>
+	
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
